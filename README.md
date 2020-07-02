@@ -8,7 +8,7 @@
 
 **Ανοίγουμε το _terminal_**
 
--Εγκατάσταση Docker 
+**Εγκατάσταση Docker** 
 
 1.sudo apt-get update
 
@@ -22,7 +22,7 @@
 
 6.sudo apt install docker-ce
 
--Εγκατάσταση docker-compose
+**Εγκατάσταση docker-compose**
 
 1.sudo curl -L https://github.com/docker/compose/releases/download/1.21.2/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
 
@@ -33,7 +33,7 @@
 
 **Αφού έχουμε κατεβάσει τα αρχεία του repository στον υπολογιστή μας (clone)**
 
--Για να τρέξει το σύστημα κάνουμε τα παρακάτω βήματα στο _terminal_
+**-Για να τρέξει το σύστημα κάνουμε τα παρακάτω βήματα στο _terminal_**
 
 1.Με την εντολή cd να μπούμε μέσα στον φάκελο MovieFlix2020_E16128_SITARAS_ALEXANDROS
 
@@ -45,19 +45,19 @@
 
 ##ADMIN
 
--Έχει δημιουργηθεί ένας admin με στοιχεία email:admin@admin name:admin password:admin και αυτό γιατί εγγραφή στο συστημα κάνουν μόνο απλή χρήστες
+**Έχει δημιουργηθεί ένας admin με στοιχεία email:admin@admin name:admin password:admin και αυτό γιατί εγγραφή στο συστημα κάνουν μόνο απλή χρήστες**
 
--Αρχικό endpoint είναι το : localhost:5003/loginusers
+**-Αρχικό endpoint είναι το : localhost:5003/loginusers**
 
   1.Εισάγουμε email και password
   
   2.Πατάμε Login
   
-  *Αν τα στοιχεία είναι λάθος εμφανίζεται "Invalid values" και πατάμε πίσω να ξαναβάλουμε.Ενώ αν είναι σωστά μας μεταφέρει στο endpoint: localhost:5003/movflixadmin/<user>
+  **Αν τα στοιχεία είναι λάθος εμφανίζεται "Invalid values" και πατάμε πίσω να ξαναβάλουμε.Ενώ αν είναι σωστά μας μεταφέρει στο endpoint: localhost:5003/movflixadmin/<user>**
   
--Endpoint : localhost:5003/movflixadmin/<user>
+**-Endpoint : localhost:5003/movflixadmin/<user>**
   
-  Υπάρχουν οι εξής επιλογές ως admin στο κεντρικό μενού του
+  -Υπάρχουν οι εξής επιλογές ως admin στο κεντρικό μενού του
     
     1.User mode : που τον μεταφέρει στο endpoind: localhost:5003/movflix/<user>  όπου εκεί είναι το menu του απλού χρήστη ,που θα εξειγήθεί στον SIMPLE USER παρακάτω τί μπορεί να κάνεί. Αυτό υπάρχει γιατί ένας admin μπορεί να κάνει όλες τις λειτουργείς ενός απλου user.
     
@@ -67,7 +67,7 @@
     
     4.See and modify users : που τον μεταφέρει στο endpoint: localhost:5003/movflixadmin/modusers/<user>
 
--Endpoint : localhost:5003/movflixadmin/addmovie
+**-Endpoint : localhost:5003/movflixadmin/addmovie**
 
   1.Εισάγει απαραίτητα τίτλο και τουλάχιστον έναν πρωταγονιστή(με κόμμα και χωρίς κενά) ,και αν θέλει έτος και πλοκή ταινίας
   
@@ -75,7 +75,7 @@
   
   3.Εμφανίζετε 'The movie adding successfully'
 
--Endpoint : localhost:5003/movflixadmin/delmovie
+**-Endpoint : localhost:5003/movflixadmin/delmovie**
 
   1.Εισάγει τίτλο ταινίας
   
@@ -83,9 +83,9 @@
   
   3.Εμφανίζετε 'Delete Succesful'
   
--Endpoint : localhost:5003/movflixadmin/modusers/<user>
+**-Endpoint : localhost:5003/movflixadmin/modusers/<user>**
 
-  Eδώ υπάρχει η δυνατότητα να διαχειριστεί τους simple users
+  -Eδώ υπάρχει η δυνατότητα να διαχειριστεί τους simple users
     
     1.link button : "Change category to admin" το οποίο τον μετατρέπει τον user σε admin
     
@@ -93,15 +93,15 @@
     
     3.link button : "See and delete comments" το οποίο τον μεταφέρει στο endpoind : localhost:5003/movflixadmin/modusers/deletecom/<user> (το <user> είνια του simple user που επιλέχθηκε
     
--Endpoint : localhost:5003/movflixadmin/modusers/deletecom/<user>    
+**-Endpoint : localhost:5003/movflixadmin/modusers/deletecom/<user>**    
     
-    Ο Admin βλέπει όλα τα σχόλια αυτού του χρήστη συνοδευόμενο από κάθε ταινία (τίτλο και έτος) 
+    **Ο Admin βλέπει όλα τα σχόλια αυτού του χρήστη συνοδευόμενο από κάθε ταινία (τίτλο και έτος)** 
     
     1.Έχει την δυνατότητα να διαγράψει όποιο σχόλιό του θέλει με το link button : "Delete comment"
     
     2.αν το κάνει εμφανίζεται "Delete Successful"
 
--Endpoint : localhost:5003/movflixadmin/update/<user>/<id>
+**-Endpoint : localhost:5003/movflixadmin/update/<user>/<id>**
   
     1.Εισάγει ότι θέλει να κάνει update , (τίτλο ,year,actors)
     
@@ -119,25 +119,25 @@
 
 ##SIMPLE USER 
 
--Αρχικά πρέπει να κάνει εγγραφή έτσι πηγένει στο endpoint : localhost:5003/registusers 
+**-Αρχικά πρέπει να κάνει εγγραφή έτσι πηγένει στο endpoint : localhost:5003/registusers**
 
--Endpoint : localhost:5003/registusers 
+**-Endpoint : localhost:5003/registusers** 
  
- 1.Αν έχει ήδη λογαριασμο υπάρχει link button : "Log in" το οποίο τον μεταφέρει στο endpoint: ndpoint : localhost:5003/loginusers για να συνδεθεί
+  1.Αν έχει ήδη λογαριασμο υπάρχει link button : "Log in" το οποίο τον μεταφέρει στο endpoint: ndpoint : localhost:5003/loginusers για να συνδεθεί
  
- 2.Αλλιώς εισάγει email , name ,password
+  2.Αλλιώς εισάγει email , name ,password
  
- 3.Πατάει Register και αν δέν υπάρχει άλλος χρήστης με το ίδιο email πραγματοποιείτε εγγραφή 
+  3.Πατάει Register και αν δέν υπάρχει άλλος χρήστης με το ίδιο email πραγματοποιείτε εγγραφή 
  
- 4.Με επιτυχή εγγραφη τον μεταφέρει στο endpoint :ndpoint : localhost:5003/loginusers (κανει σύνδεση όπως περιγράψαμε στον ADMIN , αλλιώς εμφανίζεται 'This email allready exist from another user!Try something else'
+  4.Με επιτυχή εγγραφη τον μεταφέρει στο endpoint :ndpoint : localhost:5003/loginusers (κανει σύνδεση όπως περιγράψαμε στον ADMIN , αλλιώς εμφανίζεται 'This email allready exist from another user!Try something else'
  
--Endpoint : localhost:5003/loginusers
+**-Endpoint : localhost:5003/loginusers**
  
- 1.Αν σε περίπτωση που δεν έχει λογαριασμό θέλει να κάνει regist υπάρχει link button: "Sing up here" που τον μεταφέρει στο endpoint : localhost:5003/registuser
+  1.Αν σε περίπτωση που δεν έχει λογαριασμό θέλει να κάνει regist υπάρχει link button: "Sing up here" που τον μεταφέρει στο endpoint : localhost:5003/registuser
  
- 2.Αν κάνει σωστό login ,τον μεταφέρει στο menu ενός simple user στο endpoint : localhost:5003/movflix/<user> 
+  2.Αν κάνει σωστό login ,τον μεταφέρει στο menu ενός simple user στο endpoint : localhost:5003/movflix/<user> 
 
--Endpoint : localhost:5003/movflix/<user>
+**-Endpoint : localhost:5003/movflix/<user>**
 
   1.Υπάρχει η δυνατότητα να διαγράψει τον λογαριασμό του με ένα link button: "Delete my account" οπου τον μεταφέρει σε ένα endpoint : localhost:5003/movflix/delacc/<user>
   
@@ -146,7 +146,7 @@
   3.Με το πάτημα ενός link button: See στο σημείο που λέει "My comments and ratings" , τον μεταφέρει στο endpoint: localhost:5003/movflix/seecomrat/<user>  , για να δει τα comments ή τα ratings του
   
   
--Endpoint: localhost:5003/movflix/searchtitle/<user> 
+**-Endpoint: localhost:5003/movflix/searchtitle/<user>** 
   
   1.Βάζει ένα τίτλο
   
@@ -154,7 +154,7 @@
   
   3.Αν υπάρχει εμφανίζονται όλες οι ταινίες με αυτόν τον τίτλο 
   
--Endpoint: localhost:5003/movflix/searchyear/<user>
+**-Endpoint: localhost:5003/movflix/searchyear/<user>**
   
   1.Βάζει ένα έτος
   
@@ -162,7 +162,7 @@
   
   3.Αν υπάρχει εμφανίζονται όλες οι ταινίες με αυτό το έτος
   
--Endpoint: localhost:5003/movflix/searchactor/<user> 
+**-Endpoint: localhost:5003/movflix/searchactor/<user>** 
   
   1.Βάζει ένα actor
   
@@ -173,23 +173,23 @@
 
 ######Οι ταινίες που εμφανίζονται στα 3 παραπάνω endpoints ειναι σε html , για κάθε μία απ αυτες υπάρχουν οι παρακάτω δυνατότητες στους users
   
-  -Να δώσει το rating του πατόντας ένα απο τα link button : "1","2","3","4","5" ,σε περίπτωση που έχει ξανα πατήσει αναβαθμίζεται με την νέα του βαθμολογία
+  1.Να δώσει το rating του πατόντας ένα απο τα link button : "1","2","3","4","5" ,σε περίπτωση που έχει ξανα πατήσει αναβαθμίζεται με την νέα του βαθμολογία
   
-  -Να κάνει comments πατόντας το link button: "Add a comment" που τον μεταφέρει στο endpoint: localhost:5003/addcomment/<user>/<id>  (το id είναι της ταινίας που θα μπεί το σχόλιο) 
+  2.Να κάνει comments πατόντας το link button: "Add a comment" που τον μεταφέρει στο endpoint: localhost:5003/addcomment/<user>/<id>  (το id είναι της ταινίας που θα μπεί το σχόλιο)** 
 
     ######Οι ADMIN εδώ έχουν μια παραπάνω λειτουργεία που εμφανίζεται μόνο σε αυτούς στο τέλος κάθε ταινίας
      
      -Μπορεί να κάνει update κάποια απο τις movies που έχουν αναζητηθεί πατόντας το link button: "Update Movie" το οποίο τον μεταφέρει στο endpoint: localhost:5003/movflixadmin/update/<user>/<id> (το id της ταινίας που θα γίνει update)
   
   
--Endpoint: localhost:5003/addcomment/<user>/<id>
+**-Endpoint: localhost:5003/addcomment/<user>/<id>**
  
   1.Εισάγει το σχόλιο που θέλει και πατάει το button "Submit"
   
   2.Εμφανίζεται "Comment Added"
 
 
--Endpoint : localhost:5003/movflix/seecomrat/<user>
+**-Endpoint : localhost:5003/movflix/seecomrat/<user>**
 
     
     1.Στο "What do you want to see" μπορεί να εισάγει το "mycomments" (για τα σχόλια του) ή "myratings" (για τις βαθμολογίες του ) 
@@ -204,7 +204,7 @@
              2.Για τα ratings , με το link button 'Delete rating' μπορεί να διαγράψει όποια δική του βαθμολογία θέλει από όποια ταινία έχει κάνει .Αυτόματα ενημερώνεται και η ταινία.
 
 
--Endpoint : localhost:5003/movflix/delacc/<user>
+**-Endpoint : localhost:5003/movflix/delacc/<user>**
  
   1.Εισάγει yes ή no στο "Answer"
   
