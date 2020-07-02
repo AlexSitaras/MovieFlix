@@ -1,0 +1,21 @@
+<form action="" method="POST">
+  <div class="container">
+   
+    <h1>MovieFlix Login</h1>
+    <hr>
+      <div class="form-group"> 
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+      </div>
+    <hr>
+    <button type="submit">Login</button>
+    
+  
+    <div>
+      Don't have an account? <a href="{{ url_for('regist_users') }}">Sing up here</a>
+    </div>
+  </div>
+</form> 

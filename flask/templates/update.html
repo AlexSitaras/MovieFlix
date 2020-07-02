@@ -1,0 +1,26 @@
+<form action="" method="POST">
+    <div class="imgcontainer">
+     
+      <h1>Update Movie</h1>
+  
+    <div class="container">
+      <label for="title"><b>Title</b></label>
+      <input type="text" placeholder="Enter a title" name="title" >
+  
+      <label for="year"><b>Year</b></label>
+      <input type="text" placeholder="Enter the year" name="year" >
+  
+      <label for="desc"><b>Description</b></label>
+      <input type="text" placeholder="Enter the description" name="desc" >
+      <h3></h3>
+      <div class="container">
+      <label for="actors"><b>Actors :{{movactors}}</b></label>
+      <h5>For entry only , write "1" in the end</h5>
+      <h5>For entry and delete previous actors , write "2" in the end</h5>
+      <h5>For delete someones only , write "3" in the end</h5>
+      <input type="text" placeholder="Enter actors with comma" name="actors" >
+      </div>
+      <button type="submit">Update</button>
+    </div>
+   </div>
+  </form> 

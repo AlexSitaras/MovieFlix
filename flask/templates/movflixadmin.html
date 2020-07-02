@@ -1,0 +1,21 @@
+<form action="" method="POST" >
+    <h1>MOVIEFLIX</h1>
+    <hr>
+    <div class="topnav">
+    <h2>Admin email  : {{usr}}</h2>
+    
+    </div>
+    <hr>
+    <div class="topnav">
+        <h3>User mode : <a href="{{ url_for('mov_flix', usr = usr) }}" class="button">here </a> </h3>
+    </div>
+    <div class="topnav">
+        <h3>Add movie : <a href="{{ url_for('add_movie') }}" class="button">here </a> </h3>
+    </div>
+    <div class="topnav">
+        <h3>Delete movie : <a href="{{ url_for('del_movie') }}" class="button">here </a> </h3>
+    </div>
+    <div class="topnav">
+        <h3>See and modify users : <a href="{{ url_for('mod_users' ,usr = usr) }}" class="button">here </a> </h3>
+    </div>
+</form>

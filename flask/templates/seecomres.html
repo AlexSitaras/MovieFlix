@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+ <html> 
+ <form action="" method="POST" method="GET">
+    <h1>{{usr}} COMMENTS</h1>
+    <body>  
+    {% for item in commov %}
+      <h4>Comment :</h4>
+      <li>{{item[0]}}</li> 
+      <h4>Movie :</h4>
+      <li>{{item[-1]}}</li>
+      <h4>Year :</h4>
+      <li>{{item[2]}}</li>
+      <li></li>
+      <a href="{{ url_for('del_com', usr = usr ,delcom = item[0], delmov = item[1]) }}" class="button">Delete comment</a>
+      <h3> ----------------------------------</h3>
+    {% endfor %}
+    
+            
+
+    
+    </body>
+</form>
+</html> 

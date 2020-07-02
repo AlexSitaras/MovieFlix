@@ -1,0 +1,37 @@
+ <!DOCTYPE html>
+ <html> 
+ <form action="" method="POST" method="GET">
+    <h1>MOVIES</h1>
+    <body>
+    {% for item in movie %}
+     <h4>Title :</h4>
+     <li>{{item.title}}</li> 
+     <h4>Year :</h4>
+     <li>{{item.year}}</li>
+     <h4>Actors :</h4>
+     <li>{{item.actors}}</li>
+     <h4>Description :</h4>
+     <li>{{item.description}}</li>
+     <h4>Rating :</h4>
+     <li>{{item.rating[-1]}}</li>
+     <h6>Give your rate :</h6>
+     <a href="{{ url_for('add_rating', usr = usr, id=item._id , rate = 1) }}" class="button">1</a>
+     <a href="{{ url_for('add_rating', usr = usr, id=item._id , rate = 2) }}" class="button">2</a>
+     <a href="{{ url_for('add_rating', usr = usr, id=item._id , rate = 3) }}" class="button">3</a>
+     <a href="{{ url_for('add_rating', usr = usr, id=item._id , rate = 4) }}" class="button">4</a>
+     <a href="{{ url_for('add_rating', usr = usr, id=item._id , rate = 5) }}" class="button">5</a>
+     <h4>Comments :</h4>
+     <a class="active" href="{{ url_for('add_comment', usr = usr, id=item._id) }}">Add a comment</a>
+     <li></li>
+     <li>{{item.comments}}</li>
+     <li></li>
+     {% if cat == "admin" %}
+     <a href="{{ url_for('update', usr = usr, id = item._id) }}" class="button">Update Movie</a>
+     {% endif %}
+     <h3> ----------------------------------------------</h3>
+     <li></li>
+    {% endfor %}
+    
+    </body>
+</form>
+</html> 

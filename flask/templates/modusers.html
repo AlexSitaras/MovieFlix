@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+ <html> 
+ <form action="" method="POST" method="GET">
+    <h1>Simple Users</h1>
+    <body>  
+    {% for item in moduser %}
+      <h4>Email :</h4>
+      <li>{{item.email}}</li> 
+      <h4>name :</h4>
+      <li>{{item.name}}</li>
+      <h4>Category :</h4>
+      <li>{{item.category}}</li>
+      <a href="{{ url_for('change_cat', id = item._id) }}" class="button">Change category to admin</a>
+      <h4>Comments :</h4>
+      <a href="{{ url_for('delete_com', usr = item.email) }}" class="button">See and delete comments</a>
+      <h4>Delete user :</h4>
+      <a href="{{ url_for('delete_user', id = item._id) }}" class="button">Delete this user</a>
+      <li></li>
+      <h3> ----------------------------------</h3>
+    {% endfor %}
+    </body>
+</form>
+</html> 
