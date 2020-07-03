@@ -10,36 +10,36 @@
 
 **Εγκατάσταση Docker** 
 
-  1.sudo apt-get update
+    1.sudo apt-get update
 
-  2.sudo apt install -y apt-transport-https ca-certificates curl software-properties-common
+    2.sudo apt install -y apt-transport-https ca-certificates curl software-properties-common
 
-  3.curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - 
+    3.curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - 
 
-  4.sudo add-apt-repository -y "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+    4.sudo add-apt-repository -y "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
 
-  5.sudo apt-get update
+    5.sudo apt-get update
 
-  6.sudo apt install docker-ce
+    6.sudo apt install docker-ce
 
 **Εγκατάσταση docker-compose**
 
-  1.sudo curl -L https://github.com/docker/compose/releases/download/1.21.2/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
+    1.sudo curl -L https://github.com/docker/compose/releases/download/1.21.2/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
 
-  2.sudo chmod +x /usr/local/bin/docker-compose
+    2.sudo chmod +x /usr/local/bin/docker-compose
 
-  3.docker-compose --version 
+    3.docker-compose --version 
 
 
 **Αφού έχουμε κατεβάσει τα αρχεία του repository στον υπολογιστή μας (clone)**
 
 **-Για να τρέξει το σύστημα κάνουμε τα παρακάτω βήματα στο _terminal_**
 
-   1.Με την εντολή cd να μπούμε μέσα στον φάκελο MovieFlix2020_E16128_SITARAS_ALEXANDROS-master
+    1.Με την εντολή cd να μπούμε μέσα στον φάκελο MovieFlix2020_E16128_SITARAS_ALEXANDROS-master
 
-   2.Τρέχουμε την εντολή docker-compose build
+    2.Τρέχουμε την εντολή docker-compose build
 
-   3.Τρέχουμε την εντολή docker-compose up
+    3.Τρέχουμε την εντολή docker-compose up
 
 **Το σύστημα τώρα είναι έτοιμο και τρέχει _localhost:5003_**
 
@@ -117,7 +117,7 @@
     
 
 
-**##SIMPLE USER**
+**##SIMPLE USER##**
 
 **-Αρχικά πρέπει να κάνει εγγραφή έτσι πηγένει στο endpoint : localhost:5003/registusers**
 
