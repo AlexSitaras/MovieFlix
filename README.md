@@ -45,7 +45,7 @@
 
 **##ADMIN##**
 
-**Έχει δημιουργηθεί ένας admin με στοιχεία email:admin@admin.com , name:admin , password:admin και αυτό γιατί εγγραφή στο συστημα κάνουν μόνο απλή χρήστες**
+**Έχει δημιουργηθεί ένας admin με στοιχεία email:admin@admin.com , name:admin , password:admin και αυτό γιατί εγγραφή στο συστημα κάνουν μόνο απλοί χρήστες**
 
 **-Αρχικό endpoint είναι το : localhost:5003/loginusers**
 
