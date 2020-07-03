@@ -1,4 +1,4 @@
-# MovieFlix2020_E16128_SITARAS_ALEXANDROS
+# MovieFlix2020_E16128_Sitaras_Alexandros
 
 ## Απαλλακτική Εργασία Πληροφοριακών Συστημάτων Σιταράς Αλέξανδρος 
 
@@ -35,7 +35,7 @@
 
 **-Για να τρέξει το σύστημα κάνουμε τα παρακάτω βήματα στο _terminal_**
 
-    1.Με την εντολή cd να μπούμε μέσα στον φάκελο MovieFlix2020_E16128_SITARAS_ALEXANDROS-master
+    1.Με την εντολή cd να μπούμε μέσα στον φάκελο MovieFlix2020_E16128_Sitaras_Alexandros-master
 
     2.Τρέχουμε την εντολή docker-compose build
 
